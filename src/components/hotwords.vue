@@ -1,5 +1,5 @@
 <template>
-     <div style="width:100%;height:200px;" :id="echarts" class="echarts"  ref="echarts"></div>
+     <div style="width:100%;height:250px;" :id="echarts" class="echarts"  ref="echarts"></div>
 </template>
 <script>
 import echarts from 'echarts'
@@ -67,7 +67,7 @@ export default {
             color: '#aaa' // 副标题文字颜色
           }
         },
-        backgroundColor: '#fff',
+        backgroundColor: '#000',
         tooltip: {},
         animationDurationUpdate: function (idx) {
         // 越往后的数据延迟越大
@@ -352,4 +352,7 @@ export default {
 </script>
 
 <style lang='less' scoped>
+    #echarts {
+        background-color:#000;
+    }
 </style>
